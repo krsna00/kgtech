@@ -1,0 +1,669 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+.navbar .max-width {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* NAV BAR */
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    padding: 15px 0;
+    background-color: black;
+    font-family: Noto Sans JP;
+    z-index: 1;
+}
+
+.navbar .menu.active {
+    left: 0;
+}
+
+.navbar.sticky {
+    padding: 15px;
+    background-color: brown;
+}  
+
+.navbar .logo {
+    margin-left: 0;
+}
+.navbar .logo a {
+    color:  #2da8d8ff;
+    font-size: 45px;
+    font-weight: bolder;
+    letter-spacing: 8px;  
+}
+
+.navbar .logo a span{
+    color: #2da8d8ff;
+}
+
+.navbar .logo a span:hover {
+    color: red;
+}
+
+.navbar .logo a:hover {
+    color: blue;
+}
+
+.navbar .menu li {
+    list-style: none;
+    display: inline-block;
+    
+
+}
+
+.navbar .menu li a {
+    display: block;
+    color: #2da8d8ff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: all 0.3s ease;
+}
+
+.navbar .menu li a:hover{
+    color: blue;
+}
+
+.burger {
+    cursor: pointer;
+}
+
+.home {
+    display: flex;
+    background: url(../img/banner.jpg) no-repeat center;
+    height: 100vh;
+    min-height: 500px;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Noto Sans JP;
+}
+
+.home .max-width{
+    margin: auto 0 auto 110px;
+
+}
+
+.home .home-content {
+    margin-left: 100px;
+}
+
+.home .home-content .txt1 {
+    font-size: 50px;
+    font-weight: bolder;
+    color: rgb(209, 32, 41);
+
+}
+.home .home-content .txt2 {
+    font-size: 45px;
+    font-weight: bolder;
+    color: rgb(209, 32, 41);
+
+}
+.home .home-content .txt3 {
+    font-size: 40px;
+    font-weight: bolder;
+    color: rgb(87, 235, 82);
+}
+
+.home .home-content a:hover {
+    color: red;
+}
+.home .home-content a {
+    display: inline-block;
+    background-color: purple;
+    color: white;
+    padding: 15px;
+    border-radius: 6px;
+    margin-top: 10px;
+    transition: all 0.5s linear;
+    font-size: 25px;
+}
+
+/* About Section */
+
+.about {
+    display: flex;
+    font-family: Noto Sans JP;
+    padding-top: 8%;
+    padding-bottom: 8%;
+}
+.about .title {
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 50px;
+    margin-top: 10%;
+  
+}
+
+.about .about-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10%;
+}
+.about .about-content .columnleft {
+    width: 45%;
+}
+
+.about .about-content .columnleft img {
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    border-radius: 50px;
+}
+.about .about-content .columnright {
+    width: 55%;
+    
+}
+
+.about .about-content .columnright .text {
+    margin-bottom: 20px;
+}
+
+.about .about-content p {
+    font-size: 20px;
+}
+
+/* Services section */
+
+.services {
+    color:  white;
+    background: black;
+    padding-top: 8%;
+    padding-bottom: 8%;
+}
+
+.services .servicestitle {
+    color: #2da8d8ff;
+}
+
+
+
+.services .services-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.services .services-content .card {
+    width: calc(33% - 20px);
+    text-align: center;
+    background: #2da8d8ff;
+    border-radius: 6px;
+    padding: 20px 25px;
+}
+
+.services .services-content .card:hover {
+    background: cornflowerblue;
+}
+
+.services .services-content .card .box:hover {
+    transform: scale(1.05);
+}
+
+.services .services-content .card .box {
+    transition: all 0.3s ease;
+}
+
+.services .services-content .card img {
+    width: 250px;
+    height: 150px;
+}
+
+
+
+.services .servicestitle {
+    font-family: Noto Sans JP;
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 50px;
+}
+
+.services .services-content p {
+    font-family: Noto Sans JP;
+    color: black;
+}
+
+.services .services-content .text {
+    font-family: Noto Sans JP;
+    font-size: 30px;
+    margin: 10px 0;
+    font-weight: 600;
+    color: black;
+} 
+
+/* SKILLS SECTION */
+
+.skills {
+font-family: Noto Sans JP;
+padding-top: 8%;
+padding-bottom: 8%;
+
+}
+
+.skills .skillstitle {
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 50px;
+    margin-top: 10%;
+    margin-bottom: 40px;
+}
+
+.skills .skills-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10%;
+ 
+}
+
+.skills .skills-content .column {
+    width: calc(50% - 30px);
+}
+
+.skills .skills-content .left .text {
+    font-size:  22px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    
+}
+
+
+.skills .skills-content .left p {
+    font-size:  20px;
+    text-align: justify;
+   
+}
+
+.skills .skills-content .right .bar {
+    margin-bottom: 15px;
+
+
+}
+
+.skills .skills-content .right .info {
+    display: flex;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skills .skills-content .right span {
+    font-weight: 600;
+    font-size: 20px;
+
+}
+
+.skills .skills-content .right .line {
+    height: 12px;
+    width: 100%;
+    background: red;
+    position: relative;
+    
+    
+}
+
+.skills .skills-content .right .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    right: 0;
+    background: #2da8d8ff;
+    
+}
+
+.skills-content .right .html::before{
+    width: 82%;
+   
+}
+
+.skills-content .right .css::before{
+    width: 80%;
+}
+
+.skills-content .right .js::before{
+    width: 70%;
+}
+
+.skills-content .right .ps::before{
+    width: 75%;
+}
+
+
+/* CONTACT SECTION */
+
+.contact {
+    font-family: Noto sans JP;
+    background-color: black;
+    color: white;
+    padding-top: 8%;
+    padding-bottom: 8%;
+}
+
+.contact .title {
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 50px;
+    color: #2da8d8ff;
+}
+
+
+.contact .contact-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.contact .contact-content .icons img {
+    height: 25px;
+    width: 35px;
+}
+
+.contact .contact-content .column {
+    width: calc(50% - 30px);
+}
+
+.contact .contact-content .left p {
+    font-size: 18px;
+    text-align: justify;
+    margin-bottom: 25px;
+    color: #2da8d8ff;
+}
+
+.contact .contact-content .info .head {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 5px 0;
+}
+
+.contact .contact-content .info .subhead {
+    font-size: 18px;
+    font-weight: 600;
+    color: #2da8d8ff;
+  
+    
+}
+
+.contact .contact-content .icons .info .subhead {
+    margin-bottom: 5px;
+}
+
+.contact .contact-content .row {
+    display: flex;
+    height: 65px;
+    align-items: center;
+    margin-bottom: 20px;
+ 
+}
+
+.contact .contact-content .row .info {
+    margin-left: 18px;
+}
+
+.contact .right {
+    margin-bottom: 10%;
+}
+
+.contact .right form .fields,
+.contact .right form .fields, .field {
+    height: x;
+    width: 100%;
+    margin-bottom: 10px;
+  
+}
+
+.contact .right form .textarea {
+    height: 80px;
+    width: 100%;
+}
+
+.contact .right form .fields input {
+    height: 50px;
+    width: 100%;
+    border: 2px solid lightgrey;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 15px;
+}
+
+.contact .right form .fields textarea {
+    width: 100%;
+    border: 2px solid lightgrey;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 15px;
+}
+
+.contact .right form .fields button {
+    height: 40px;
+    width: 200px;
+    color: #2da8d8ff;
+    background-color: black;
+    border: 2px solid #2da8d8ff;
+    font-size: 19px;
+    font-weight: 600;
+    border-radius: 6px;
+    margin-top: 8px;
+   
+}
+.contact .right form .fields button:hover {
+   
+    color: #2da8d8ff;
+    border: 2px solid white;
+    background-color: white;
+    cursor: pointer;
+}
+
+footer {
+    font-family: Noto Sans JP;
+    color: #2da8d8ff;
+    background: black;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+/* RESPONSIVE MEDIA QUERY */
+
+@media (max-width: 1920px) {
+    .home .max-width {
+        margin-left: 0px;
+    }
+    .burger {
+        display: none;
+        z-index: 999;
+    }
+}
+
+@media (.max-width: 1104px) {
+    .about .about-content .left img {
+        height: 350px;
+        width: 350px;
+    }
+}
+@media (max-width: 991px) {
+        .max-width {
+            padding: 0 50px;
+        }
+}    
+
+@media (max-width: 947px) {
+    .burger {
+        display: block;
+        z-index: 999;
+    }
+
+    .navbar .menu {
+        position: fixed;
+        height: 60vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background-color: black;
+        opacity: 90%;
+        text-align: center;
+        padding-top: 80px;
+    }
+
+    .navbar .menu li {
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .navbar .menu li a {
+        font-size: 25px;
+    }
+    
+    .home .home-content .txt1 {
+        font-size: 35px;
+    }
+    .home .home-content .txt2 {
+        font-size: 35px;
+    }
+    .home .home-content .txt3 {
+        font-size: 35px;
+    }
+    .max-width {
+        max-width: 930px;
+    }
+    .about .about-content .column {
+        width: 100%;
+    }
+
+    .about .about-content .columnleft {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px; 
+    }
+
+    .about .about-content .columnright {
+        flex: 100%;
+        text-align: center;
+    }
+
+    .services .services-content .card {
+       width: 100%;
+       margin-bottom: 30px;
+    }
+    
+}
+
+@media (max-width: 690px) {
+    .max-width {
+        padding: 0 50px;
+    }
+
+    .services .services-content .card {
+        width: 100%;
+        margin-bottom: 30px;
+     }
+
+
+}
+
+@media (max-width: 500px) {
+    .skills .skills-content .right .info{
+      display: flex;
+      justify-content: justify;
+      width: 100%;
+    
+    }
+
+    .skills .skills-content .left {
+        flex: 100%;
+        margin-bottom: 35px;
+        text-align: center;
+    }    
+
+    .skills .skills-content .right {
+        width: 100%;
+    }    
+
+
+    .contact .contact-content .left {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .contact .contact-content .right {
+        width: 100%; 
+    }
+    
+    
+    .contact .contact-content .right .fields {
+        margin-bottom: 15%;
+    }
+
+    .contact .contact-content .right .fields input {
+        width: 100%;
+    }   
+    
+    
+}
+
+
+@media (max-width: 320px) {
+    .skills .skills-content .right .info{
+      display: flex;
+      justify-content: justify;
+      width: 100%;
+    
+    }
+
+    .skills .skills-content .left {
+        flex: 100%;
+        margin-bottom: 35px;
+        text-align: center;
+    }    
+
+    .skills .skills-content .right {
+        width: 100%;
+    }    
+
+
+    .contact .contact-content .left {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .contact .contact-content .right {
+        width: 100%; 
+    }
+    
+    
+    .contact .contact-content .right .fields {
+        margin-bottom: 15%;
+    }
+
+    .contact .contact-content .right .fields input {
+        width: 100%;
+    }   
+    
+    .contact {
+        margin-bottom: 100px;
+    }
+}
